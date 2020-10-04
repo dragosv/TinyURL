@@ -1,0 +1,9 @@
+<h1>TinyURL</h1>
+
+<%= form_with(url: "/", method: "post", local: true) do |f| %>
+  <%= label_tag(:url, "Url:") %>
+  <%= text_field_tag(:url, @token.url) %>
+
+  <%= f.submit "Save" %>
+<% end %>
+
